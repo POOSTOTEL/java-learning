@@ -1,6 +1,6 @@
-package Homework2;
+package lesson1;
 
-public class Main {
+public class Temp {
     public static void main(String[] args) {
 
     }
