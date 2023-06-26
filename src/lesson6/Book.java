@@ -3,6 +3,7 @@ package lesson6;
 import lesson5.SortTwoDimMas;
 
 public class Book {
+    String label = "TeachMeSkills";
     String name;
     String author;
     char firstLetterInName;
