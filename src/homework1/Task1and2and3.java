@@ -22,7 +22,7 @@ public class Task1and2and3 {
         System.out.println("Price: " + servicePrice);
         System.out.print("\n");
         //Ввод пользовательских данных из консоли
-        System.out.println("Input driver's name: ");
+        // System.out.println("Input driver's name: ");
         name = scanner.nextLine();
         System.out.println("The driver has a license (example: \"true\" or \"false\"): ");
         hasDriverLicense = scanner.nextBoolean();
