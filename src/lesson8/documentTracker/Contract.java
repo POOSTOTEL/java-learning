@@ -1,19 +1,16 @@
 package lesson8.documentTracker;
 
-import java.util.Date;
-
 public abstract class Contract {
     private int documentNumber;
-    private Date date;
+    private String date;
 
     public Contract() {
     }
-
     public Contract(int documentNumber) {
         this.documentNumber = documentNumber;
     }
 
-    public Contract(int documentNumber, Date date) {
+    public Contract(int documentNumber, String date) {
         this(documentNumber);
         this.date = date;
     }
@@ -22,7 +19,7 @@ public abstract class Contract {
         return documentNumber;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
@@ -30,7 +27,7 @@ public abstract class Contract {
         this.documentNumber = documentNumber;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

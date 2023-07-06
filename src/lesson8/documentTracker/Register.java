@@ -1,10 +1,11 @@
 package lesson8.documentTracker;
 
-public class Registr implements WorkWithDocuments {
-    Contract contracts[];
-    private int length = 10;
+public class Register implements WorkWithDocuments {
+    private int length;
+    private Contract contracts[] = new Contract[length];
 
-    public Registr() {
+    public Register(int length) {
+        this.length = length;
     }
 
     @Override

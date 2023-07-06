@@ -1,12 +1,14 @@
 package lesson8.documentTracker;
 
-import java.util.Date;
-
 public class EmployeeContract extends Contract {
-    private Date expirationDate;
+    private String expirationDate;
     private String name;
 
-    public EmployeeContract(int documentNumber, Date date, Date expirationDate, String name) {
+    public EmployeeContract() {
+
+    }
+
+    public EmployeeContract(int documentNumber, String date, String expirationDate, String name) {
         super(documentNumber, date);
         this.expirationDate = expirationDate;
         this.name = name;
