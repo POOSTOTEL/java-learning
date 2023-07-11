@@ -13,9 +13,11 @@ public class LibraryRunner {
         String[] booksString = {"Ferry ", "How build house "};
         readers[0].takeBook(10);
         readers[0].takeBook(booksString);
+        System.out.println("Total borrowed books in the library: " + Book.getAmountBooks());
         readers[0].takeBook(books);
         readers[1].takeBook(2);
         readers[2].takeBook("Holidays ", "Kingdoms ");
-        System.out.println(Book.getAmountBooks());
+        System.out.println("Total borrowed books in the library: " + Book.getAmountBooks());
+        Book.printLibrary();
     }
 }

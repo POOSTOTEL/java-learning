@@ -1,8 +1,8 @@
 package homework9;
 
 public class Reader {
-    String name;
-    int libraryCardNumber;
+    private String name;
+    private int libraryCardNumber;
 
     public Reader(String name, int libraryCardNumber) {
         this.name = name;

@@ -20,6 +20,6 @@ public class Book {
     }
 
     static void printLibrary() {
-        System.out.println("Все книги принадлежат: " + library);
+        System.out.println("All books belong: " + library);
     }
 }
