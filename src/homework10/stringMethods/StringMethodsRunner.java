@@ -1,4 +1,4 @@
-package homework10.StringMethods;
+package homework10.stringMethods;
 
 import java.util.Scanner;
 

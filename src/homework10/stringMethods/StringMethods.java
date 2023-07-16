@@ -1,4 +1,4 @@
-package homework10.StringMethods;
+package homework10.stringMethods;
 
 public abstract class StringMethods {
     private static String keyWord = "Java";
