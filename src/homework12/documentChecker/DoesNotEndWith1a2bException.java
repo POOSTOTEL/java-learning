@@ -1,9 +1,9 @@
 package homework12.documentChecker;
 
 public class DoesNotEndWith1a2bException extends Exception {
-    private String detail;
+    private int detail;
 
-    public DoesNotEndWith1a2bException(String message, String detail) {
+    public DoesNotEndWith1a2bException(String message, int detail) {
         super(message);
         this.detail = detail;
     }

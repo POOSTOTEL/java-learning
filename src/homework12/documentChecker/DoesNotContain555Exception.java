@@ -1,9 +1,9 @@
 package homework12.documentChecker;
 
 public class DoesNotContain555Exception extends Exception {
-    private String detail;
+    private int detail;
 
-    public DoesNotContain555Exception(String message, String detail) {
+    public DoesNotContain555Exception(String message, int detail) {
         super(message);
         this.detail = detail;
     }

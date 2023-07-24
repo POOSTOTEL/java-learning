@@ -1,9 +1,9 @@
 package homework12.documentChecker;
 
 public class DoesNotStartWithABCException extends Exception {
-    private String detail;
+    private int detail;
 
-    public DoesNotStartWithABCException(String message, String detail) {
+    public DoesNotStartWithABCException(String message, int detail) {
         super(message);
         this.detail = detail;
     }
