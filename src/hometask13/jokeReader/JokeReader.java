@@ -1,4 +1,4 @@
-package hometask13;
+package hometask13.jokeReader;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,7 +12,7 @@ public class JokeReader {
         String longestWord = "";
         String analyzedWord;
         try {
-            Scanner scanner = new Scanner(new File("C:\\Users\\Lenovo\\IdeaProjects\\TeachMeSkills\\src\\hometask13\\joke.txt"));
+            Scanner scanner = new Scanner(new File("C:\\Users\\Lenovo\\IdeaProjects\\TeachMeSkills\\src\\hometask13\\jokeReader\\joke.txt"));
             while (scanner.hasNext()) {
                 analyzedWord = scanner.next();
                 analyzedWord = analyzedWord.replace('-', ' ').replace(',', ' ');
@@ -25,7 +25,7 @@ public class JokeReader {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-        try (FileWriter fw = new FileWriter("C:\\Users\\Lenovo\\IdeaProjects\\TeachMeSkills\\src\\hometask13\\longest-word.txt")) {
+        try (FileWriter fw = new FileWriter("C:\\Users\\Lenovo\\IdeaProjects\\TeachMeSkills\\src\\hometask13\\jokeReader\\longest-word.txt")) {
             fw.write(longestWord);
         } catch (IOException e) {
             throw new RuntimeException(e);
