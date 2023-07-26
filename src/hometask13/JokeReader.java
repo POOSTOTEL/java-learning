@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class JokeReader {
+    //Проверьте этот код, это первое задание, я зкоммитил его не в ту ветку, случайно.
     public static void main(String[] args) {
         String longestWord = "";
         String analyzedWord;
