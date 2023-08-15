@@ -1,0 +1,9 @@
+<!DOCTYPE root-element [
+        <!ELEMENT root-element (host,port,credentials)>
+        <!ELEMENT host (#PCDATA)>
+        <!ELEMENT port (#PCDATA)>
+        <!ELEMENT credentials (credential+)>
+        <!ELEMENT credential (user, password)>
+        <!ELEMENT user (#PCDATA)>
+        <!ELEMENT password (#PCDATA)>
+        ]>

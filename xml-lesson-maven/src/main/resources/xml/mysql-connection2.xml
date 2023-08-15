@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<connection>
+    <host value="localhost"/>
+    <port value="3306"/>
+    <credentials>
+        <credential user="root" password="root-secret"/>
+        <credential user="user" password="secret"/>
+    </credentials>
+</connection>
