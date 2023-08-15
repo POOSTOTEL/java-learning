@@ -1,0 +1,8 @@
+<!DOCTYPE root-element [
+        <!ELEMENT root-element (elem1,elem2)>
+        <!ELEMENT elem1 (#PCDATA)>
+        <!ATTLIST elem1 atrribute1 #REQUIRED>
+        <!ATTLIST elem1 atrribute2 #REQUIRED>
+        <!ELEMENT elem2 (innerElem+)>
+        <!ELEMENT innerElem EMPTY>
+        ]>

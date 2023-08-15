@@ -1,0 +1,12 @@
+<!DOCTYPE root-element [
+        <!ELEMENT root-element (host,port,credentials)>
+        <!ELEMENT host EMPTY>
+        <!ATTLIST host value #REQUIRED>
+        <!ELEMENT port EMPTY>
+        <!ATTLIST port value #REQUIRED>
+        <!ELEMENT credentials (credential+)>
+        <!ELEMENT credential EMPTY>
+        <!ELEMENT credential (user, password)>
+        <!ELEMENT user (#PCDATA)>
+        <!ELEMENT password (#PCDATA)>
+        ]>

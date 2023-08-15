@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="root-element">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="el1" type="xsd:string"/>
+                <xsd:element name="complex-type-el2">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="some-complex-type-name" type="complex-type-with-attr" minOccurs="1"
+                                         maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="complex-type-with-attr">
+        <xsd:attribute name="attr-name" type="xsd:string" use="required"/>
+    </xsd:complexType>
+</xsd:schema>
