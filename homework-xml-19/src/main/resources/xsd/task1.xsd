@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="sonnet">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="author" type="author"/>
+                <xsd:element name="title" type="xsd:string"/>
+                <xsd:element name="lines">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="line" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="author">
+        <xsd:sequence>
+            <xsd:element name="lastName" type="xsd:string"/>
+            <xsd:element name="firstName" type="xsd:string"/>
+            <xsd:element name="nationality" type="xsd:string"/>
+            <xsd:element name="yearOfBirth" type="xsd:date"/>
+            <xsd:element name="yearOfDeath" type="xsd:date"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
