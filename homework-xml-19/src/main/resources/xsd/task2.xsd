@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="sonnet">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="author">
+                    <xsd:complexType>
+                        <xsd:attribute name="author" type="author"/>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="title">
+                    <xsd:complexType>
+                        <xsd:attribute name="value" type="xsd:string" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="lines">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="line" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="author">
+        <xsd:attribute name="lastName" type="xsd:string" use="required"/>
+        <xsd:attribute name="firstName" type="xsd:string" use="required"/>
+        <xsd:attribute name="nationality" type="xsd:string" use="required"/>
+        <xsd:attribute name="yearOfBirth" type="xsd:date" use="required"/>
+        <xsd:attribute name="yearOfDeath" type="xsd:date" use="required"/>
+    </xsd:complexType>
+</xsd:schema>

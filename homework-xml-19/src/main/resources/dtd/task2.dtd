@@ -1,0 +1,19 @@
+<!ELEMENT sonnet (author, title, lines)>
+        <!ATTLIST sonnet type CDATA #REQUIRED>
+        <!ELEMENT author (lastName, firstName, nationality, yearOfBirth, yearOfDeath)>
+        <!ELEMENT lastName EMPTY>
+        <!ATTLIST lastName CDATA #REQUIRED>
+        <!ELEMENT firstName EMPTY>
+        <!ATTLIST firstName CDATA #REQUIRED>
+        <!ELEMENT nationality EMPTY>
+        <!ATTLIST nationality CDATA #REQUIRED>
+        <!ELEMENT yearOfBirth EMPTY>
+        <!ATTLIST yearOfBirth CDATA #REQUIRED>
+        <!ELEMENT yearOfDeath EMPTY>
+        <!ATTLIST yearOfDeath CDATA #REQUIRED>
+        <!ELEMENT title EMPTY>
+        <!ATTLIST title CDATA #REQUIRED>
+        <!ELEMENT lines (line+)>
+        <!ELEMENT line EMPTY>
+        <!ATTLIST line CDATA #REQUIRED>
+
